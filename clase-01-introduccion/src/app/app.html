@@ -1,0 +1,38 @@
+<h1>Clase 1</h1>
+
+<!-- {{variable}} renderiza en el mismo componente -->
+<!-- Vincula DESDE TS HACIA HTML -> Texto -->
+<p>Puede haber texto antes {{ this.title }} y después</p>
+
+<!-- Borro todo menos la última linea -->
+
+<img src="" />
+
+<p class="color-rojo">texto</p>
+
+<!-- VINCULA DESDE TS HACIA HTML -> Atributos -->
+<p [class]="this.color">texto</p>
+
+<p [class.color-naranja]="this.naranja" [style.fontSize.px]="tamanio">texto</p>
+
+<!-- VINCULA DESDE EL HTML HACIA EL TS -> EVENTOS -->
+<!-- <input type="text" name="" id="" (click)="" /> -->
+
+<button (click)="this.cambiarTamanio()">Cambiar</button>
+
+<div (click)="this.tamanio = '4'">Click para cambiar tamaño</div>
+
+<input (keydown)="cambiarColor($event)" />
+
+<input (keydown.enter)="cambiarTamanio()" />
+
+<button (click)="this.cambiarTexto()">Cambiar texto</button>
+
+<!-- UNIÓN BIDIRECCIONAL () eventos [] atributos -->
+<input [(ngModel)]="texto" />
+
+{{ texto }}
+
+@if (this.title === 'HOLA CLASE') {
+  <h1>HOLA</h1>
+}
