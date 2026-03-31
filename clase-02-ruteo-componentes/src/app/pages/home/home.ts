@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Card } from '../../components/card/card';
 
 @Component({
@@ -7,8 +7,10 @@ import { Card } from '../../components/card/card';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {
+export class Home implements OnDestroy, OnInit {
   valor = 55;
+
+  constructor() {}
 
   ngOnInit() {
     console.log(
