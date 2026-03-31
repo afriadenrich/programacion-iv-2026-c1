@@ -12,11 +12,13 @@ Este cuatrimestre utilizamos la versión: *21.2.4* de Angular
 -   Rutas simples
 -   Navegación
 
-- [Introducción Angular](https://angular.dev/)
-- [Instalación](https://angular.dev/installation)
-- [Componentes](https://angular.dev/guide/components)
-- [Bindeo](https://angular.dev/guide/templates/binding)
-- [Bindeo de eventos](https://angular.dev/guide/templates/event-listeners)
+### Documentación
+
+- [Introducción Angular](https://angular.dev)
+- [Instalación](https://angular.dev/installation) 
+- [Componentes](https://angular.dev/guide/components) 
+- [Bindeo](https://angular.dev/guide/templates/binding) 
+- [Bindeo de eventos](https://angular.dev/guide/templates/event-listeners) 
 - [Bindeo bidireccional](https://angular.dev/guide/templates/two-way-binding)
 - [Generar componentes](https://angular.dev/cli/generate/component)
 - [Ruteo (faltan cosas por ver)](https://angular.dev/guide/routing/common-router-tasks)
