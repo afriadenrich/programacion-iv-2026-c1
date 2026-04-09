@@ -23,15 +23,11 @@ export class Card {
   link: InputSignal<string> = input('link');
   textoLink: InputSignal<string> = input('textoLink');
 
-  avisoQueSeClickeoLaCard = output<any>(); // La función que avisa
+  avisoQueSeClickeoLaCard = output<string>(); // La función que avisa
 
   cardClickeada() {
     const titulo = this.titulo();
     console.log(titulo);
-    this.avisoQueSeClickeoLaCard.emit({
-      titulo,
-      imagen: this.imagen(),
-      subtitulo: this.subtitulo(),
-    });
+    this.avisoQueSeClickeoLaCard.emit(titulo);
   }
 }

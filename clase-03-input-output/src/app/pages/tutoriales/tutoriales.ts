@@ -27,9 +27,8 @@ export class Tutoriales {
 
   ultimaCard = '';
 
-  meAvisaronQueClickearonUnaCard(card: any) {
-    this.ultimaCard = card.titulo;
-    console.log(card);
+  meAvisaronQueClickearonUnaCard(titulo: string) {
+    this.ultimaCard = titulo;
   }
 }
 
