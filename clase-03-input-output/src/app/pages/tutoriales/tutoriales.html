@@ -1,0 +1,39 @@
+<h1>Tutoriales</h1>
+<div id="tutoriales">
+  <!-- <app-card
+    titulo="Aprende Angular en tu navegador."
+    subtitulo="a través del patio de juegos"
+    imagen="img/tren4.jpg"
+    textoLink="Compienza a programar"
+  ></app-card>
+  <app-card
+    titulo="Señales de aprendizaje2"
+    subtitulo="a través del patio de juegos"
+    imagen="img/tren2.jpg"
+    textoLink="Compienza a programar"
+  ></app-card> -->
+
+  <!-- for(let i = 0; i < x; i++) -->
+  <!-- array[i] -> item -->
+  <!-- for(item of array)-->
+
+  <hr />
+
+  <p>
+    Última card seleccionada: <span>{{ ultimaCard }}</span>
+  </p>
+
+  <hr />
+
+  @for (elemento of cards; track elemento.tituloOriginal) {
+    <!-- $event es la única forma de obtener el valor de cualquier evento en el html -->
+    <app-card
+      [titulo]="elemento.tituloOriginal"
+      [subtitulo]="elemento.subtituloOriginal"
+      [textoLink]="elemento.textoLinkOriginal"
+      [link]="elemento.linkOriginal"
+      [imagen]="elemento.imagenOriginal"
+      (avisoQueSeClickeoLaCard)="meAvisaronQueClickearonUnaCard($event)"
+    ></app-card>
+  }
+</div>
