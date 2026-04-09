@@ -1,2 +1,4 @@
-<app-filtro nombre="orden" (avisarEncendido)="encendido($event)"></app-filtro>
-<app-filtro nombre="precio" (avisarEncendido)="encendido($event)"></app-filtro>
+<!-- Input - #5 - Definir la relación. Puede ser por [variables] o harcodeado -->
+<!-- Output - #5 - Definir la relación. (output)="funcionDelPadre($event)" El $event solo es necesario si el evento tiene datos. Si el evento es un emit vacio, el $event va a estar vacío. -->
+<app-filtro [nombre]="filtro1" (avisarEncendido)="encendido($event)"></app-filtro>
+<app-filtro [nombre]="filtro2" (avisarEncendido)="encendido($event)"></app-filtro>
