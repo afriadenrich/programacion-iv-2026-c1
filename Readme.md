@@ -3,6 +3,18 @@
 ### Importante:
 Este cuatrimestre utilizamos la versión: *21.2.4* de Angular
 
+## FECHAS DENTRO DE LA CURSADA
+
+- 12/05 - Entrega TP #1
+- 25/06 - Entrega TP #2
+- 02/07 - Recuperatorio TP #1
+- 07/07 - Recuperatorio TP #2 - Última fecha para PROMOCIONAR
+
+## FECHAS FUERA DE LA CURSADA
+
+- 14/07 - Última fecha para APROBAR / REGULARIZAR. Si para esta fecha no tienen 4 y 4 en los TPs, pueden entregar ambos para llegar al 4 máximo.
+- 16/07 - Primer fecha de final luego de la cursada. Deben tener la cursada regularizada (4). Se pueden anotar hasta el 15/07.
+
 ## Clase 01 - 20/08/2025
 
 ### Introducción Angular
