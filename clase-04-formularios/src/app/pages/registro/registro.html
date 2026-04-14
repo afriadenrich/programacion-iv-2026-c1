@@ -1,0 +1,65 @@
+<h1>Registro</h1>
+<!--
+
+<form>
+  <div>
+    <label for="nombre">Nombre</label>
+    <input name="nombre" id="nombre" [formControl]="nombre" />
+  </div>
+  <div>
+    <label for="apellido">Apellido</label>
+    <input name="apellido" id="apellido" [formControl]="apellido" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" [formControl]="email" />
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password" [formControl]="password" />
+  </div>
+</form>
+<button (click)="mostrar()">Registrarse</button>
+-->
+
+<form [formGroup]="formulario" (ngSubmit)="mostrar()">
+  <div>
+    <label for="nombre">Nombre</label>
+    <input
+      name="nombre"
+      id="nombre"
+      formControlName="nombre"
+      [className]="
+        formulario.get('nombre')?.errors !== null && formulario.get('nombre')?.touched
+          ? 'error'
+          : ''
+      "
+    />
+
+    @if (formulario.get('nombre')?.errors) {
+      @if (formulario.get('nombre')?.getError('maxlength'); as MAXLENGTH) {
+        <small class="small-error">El largo máximo es de {{ MAXLENGTH.requiredLength }}</small>
+      }
+
+      @if (formulario.get('nombre')?.getError('minlength'); as MINLENGTH) {
+        <small class="small-error">El largo minimo es de {{ MINLENGTH.requiredLength }}</small>
+      }
+    }
+  </div>
+  <div>
+    <label for="apellido">Apellido</label>
+    <input name="apellido" id="apellido" formControlName="apellido" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" formControlName="email" />
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password" formControlName="password" />
+  </div>
+  <button type="reset">Borrar campos</button>
+  <button type="submit">Registrarse</button>
+</form>
+
+<!-- recordar intentar hacer una iteración para crear los inputs -->
