@@ -1,0 +1,50 @@
+<h1>Registro</h1>
+<!--
+
+<form>
+  <div>
+    <label for="nombre">Nombre</label>
+    <input name="nombre" id="nombre" [formControl]="nombre" />
+  </div>
+  <div>
+    <label for="apellido">Apellido</label>
+    <input name="apellido" id="apellido" [formControl]="apellido" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" [formControl]="email" />
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password" [formControl]="password" />
+  </div>
+</form>
+<button (click)="mostrar()">Registrarse</button>
+-->
+
+<form [formArray]="formulario" (ngSubmit)="mostrar()">
+  @for (control of formulario.controls; track $index) {
+    <input [formControlName]="$index" />
+  }
+
+  <!-- <div>
+    <label for="nombre">Nombre</label>
+    <input name="nombre" id="nombre" formControlName="0" />
+  </div>
+  <div>
+    <label for="apellido">Apellido</label>
+    <input name="apellido" id="apellido" formControlName="1" />
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" formControlName="2" />
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input name="password" id="password" type="password" formControlName="3" />
+  </div> -->
+  <button type="reset">Borrar campos</button>
+  <button type="submit">Registrarse</button>
+</form>
+
+<!-- recordar intentar hacer una iteración para crear los inputs -->

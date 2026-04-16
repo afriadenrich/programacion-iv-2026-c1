@@ -101,7 +101,16 @@ ng help
 
 ### Temas
 
+- Formularios
+- Validaciones
+- Validaciones propias
+
 ### Documentación
+
+- [Formularios](https://angular.dev/guide/forms)
+- [Formularios Reactivos](https://angular.dev/guide/forms)
+- [Validaciones](https://angular.dev/guide/forms/signals/validation)
+- [Validaciones propias]()
 
 ## Clase 05 - 16/04/2026
 
