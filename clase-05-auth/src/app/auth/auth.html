@@ -1,3 +1,7 @@
+@if (this.authS.usuarioActual()) {
+  <p>{{ this.authS.usuarioActual()?.user_metadata?.['nombre'] }}</p>
+}
+<hr />
 <button routerLink="login">Login</button>
 <button routerLink="register">Register</button>
 <router-outlet />

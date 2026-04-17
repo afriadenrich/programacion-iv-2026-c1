@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   AbstractControl,
   FormControl,
@@ -6,6 +6,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { AuthService } from '../auth.service';
+import { IRegistro } from '../auth.interfaces';
 
 @Component({
   selector: 'app-register',
@@ -14,13 +16,22 @@ import {
   styleUrl: './register.css',
 })
 export class Register {
+  // injectar el servico
+  authService = inject(AuthService);
+
   formulario = new FormGroup({
     email: new FormControl('', [Validators.email, Validators.required]),
     nombre: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
   });
 
-  accion() {}
+  accion() {
+    if (this.formulario.invalid) return;
+
+    this.formulario.value; // {email: "", nombre: "", password: ""}
+
+    this.authService.registrar(this.formulario.value as IRegistro);
+  }
   // async validacionAsincronica(control: AbstractControl) {
   //   await fetch()
 
