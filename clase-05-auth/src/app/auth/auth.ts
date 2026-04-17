@@ -5,7 +5,7 @@ import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-auth',
-  imports: [RouterOutlet, RouterLinkWithHref, JsonPipe],
+  imports: [RouterOutlet, RouterLinkWithHref],
   templateUrl: './auth.html',
   styleUrl: './auth.css',
 })

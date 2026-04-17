@@ -1,7 +1,9 @@
 @if (this.authS.usuarioActual()) {
   <p>{{ this.authS.usuarioActual()?.user_metadata?.['nombre'] }}</p>
+  <button (click)="this.authS.cerrarSesion()">Cerrar sesión</button>
+} @else {
+  <hr />
+  <button routerLink="login">Login</button>
+  <button routerLink="register">Register</button>
 }
-<hr />
-<button routerLink="login">Login</button>
-<button routerLink="register">Register</button>
 <router-outlet />

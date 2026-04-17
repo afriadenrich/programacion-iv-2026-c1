@@ -62,6 +62,7 @@ export class AuthService {
     {
       console.log(response.data);
       this.usuarioActual.set(response.data.user);
+      this.router.navigateByUrl('/auth');
     }
   }
 
@@ -77,13 +78,16 @@ export class AuthService {
     {
       console.log(response.data);
       this.usuarioActual.set(response.data.user);
+      this.router.navigateByUrl('/auth');
     }
   }
 
   router = inject(Router);
 
   cerrarSesion() {
+    // Hay cosas que aunque den error (como por ejemplo, que la sesión ya haya caducado), DEBEN finalizar correctamente.
     this.supabase.auth.signOut();
+    this.usuarioActual.set(null);
     this.router.navigateByUrl('/auth/login');
   }
 

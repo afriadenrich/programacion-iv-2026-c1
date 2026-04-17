@@ -18,6 +18,7 @@ export class Login {
   });
 
   accion() {
-    this.authService.loguear(this.formulario.value as ILogin);
+    this.authService.loguear(this.formulario.value as { email: string; password: string });
+    // this.authService.loguear(this.formulario.value as ILogin);
   }
 }

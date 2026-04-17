@@ -4,7 +4,9 @@
 Este cuatrimestre utilizamos la versión: *21.2.4* de Angular
 
 ## FECHAS DENTRO DE LA CURSADA
-
+- 21/04 - Corrección del 1er TP
+- 28/04 - Corrección del 1er TP
+- 05/05 - Corrección del 1er TP
 - 12/05 - Entrega TP #1
 - 25/06 - Entrega TP #2
 - 02/07 - Recuperatorio TP #1
