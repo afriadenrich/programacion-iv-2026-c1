@@ -58,8 +58,7 @@ export class AuthService {
 
     if (response.error) {
       console.log(response.error);
-    }
-    {
+    } else {
       console.log(response.data);
       this.usuarioActual.set(response.data.user);
       this.router.navigateByUrl('/auth');
