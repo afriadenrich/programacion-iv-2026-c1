@@ -1,0 +1,20 @@
+<button routerLink="/juegos/ahorcado">Ahorcado</button>
+<button routerLink="/resultados">Resultados</button>
+
+@if (this.authS.usuarioActual()) {
+  <p>{{ this.authS.usuarioActual()?.user_metadata?.['nombre'] }}</p>
+  <button (click)="this.authS.cerrarSesion()">Cerrar sesión</button>
+} @else {
+  <hr />
+  <button routerLink="/auth/login">Login</button>
+  <button routerLink="/auth/register">Register</button>
+}
+
+<hr />
+
+<p>No poder entrar a /auth si estoy logueado</p>
+<p>No poder entrar a /juegos/ahorcado si no estoy logueado</p>
+
+<hr />
+
+<router-outlet />

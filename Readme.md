@@ -118,17 +118,22 @@ ng help
 
 ### Temas
 
+- Supabase
+- Auth
+
 ### Documentación
 
 ## Clase 06 - 21/04/2026
 
-### Temas
-
-### Documentación
+### Clase de corrección
 
 ## Clase 07 - 23/04/2026
 
 ### Temas
+
+- Guards
+- Supabase DB
+- Supabase Realtime
 
 ### Documentación
 
