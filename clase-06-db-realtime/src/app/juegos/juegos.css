@@ -1,0 +1,8 @@
+#c-juegos {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  background-color: #6683c1;
+  padding: 10px;
+  border-radius: 20px;
+}

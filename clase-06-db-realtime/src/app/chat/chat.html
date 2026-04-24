@@ -1,0 +1,23 @@
+<div id="c-chat">
+  <h1>Chat</h1>
+  <p>Indicar usuario:</p>
+  <input name="usuario" id="usuario" [(ngModel)]="usuario" />
+  <br />
+  <div id="c-mensajes">
+    @for (msj of mensajes(); track msj.id) {
+      <div class="msj">
+        <small>{{ msj.creado_en }}</small>
+        <p class="nombre">{{ msj.usuario }}</p>
+        <p>{{ msj.contenido }}</p>
+      </div>
+    }
+  </div>
+  <div id="c-enviar">
+    <input name="mensaje" id="mensaje" [(ngModel)]="contenido" /><button
+      id="enviar"
+      (click)="enviar()"
+    >
+      Enviar
+    </button>
+  </div>
+</div>

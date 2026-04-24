@@ -1,0 +1,32 @@
+#c-chat {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #6683c1;
+  padding: 10px;
+  border-radius: 20px;
+  height: 70dvh;
+}
+#c-mensajes {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#c-enviar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#mensaje {
+}
+#enviar {
+}
+.msj {
+  padding: 5px;
+  margin: 0;
+  border: solid 1px black;
+}
+.nombre {
+  font-weight: bolder;
+}
