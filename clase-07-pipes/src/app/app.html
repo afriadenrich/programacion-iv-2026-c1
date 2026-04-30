@@ -1,0 +1,48 @@
+<!-- 11234567 -> DATO GUARDADO -->
+<!-- DNI: 11.234.567 -> DATO MOSTRADO-->
+<!-- DNI: 11234567 -> DATO MOSTRADO-->
+<!-- 11.234.567 -> DATO MOSTRADO-->
+
+<!-- Los llamo por su selector, no por su clase -->
+<p>{{ nombre0 | titlecase }}</p>
+<p>{{ nombre1 | titlecase }}</p>
+<p>{{ nombre2 | titlecase }}</p>
+<p>{{ nombre3 | titlecase }}</p>
+
+<p>{{ objeto | json }}</p>
+
+<!-- Los parámetros se envian agregando :parametro:parametro etc.-->
+<!-- <p>{{ fechaEnString | date:"parametro1":"parametro2":123:"parametro4" | uppercase }}</p> -->
+<p>{{ fechaEnString | date: 'dd/MM-yyyy' }}</p>
+<p>{{ fechaLarga | date: 'dd-MM-yyyy HH:mm:ss.ssss' : '-3' }}</p>
+<p>{{ fechaNumero | date: 'dd-MM-yyyy HH:mm:ss.ssssz' : '+0' }}</p>
+<p>{{ fechaDate | date: 'dd-MM-yyyy HH:mm:ssz' : '+0' }}</p>
+
+<!-- MONEDAS -->
+
+<p>{{ 123.4567 | currency }}</p>
+<p>{{ 123.4567 | currency: 'EUR' }}</p>
+<p>{{ 123.4567 | currency: 'EUR' : 'code' }}</p>
+<p>{{ 123.4567 | currency: 'EUR' : 'symbol' : '2.2-6' }}</p>
+<p>{{ 123.4567128213 | currency: 'EUR' : 'symbol' : '2.2-6' }}</p>
+<p>{{ 3.4 | currency: 'EUR' : 'symbol' : '2.2-6' }}</p>
+
+<!-- PIPE PROPIO -->
+<p>{{ textoCorto | acortador }}</p>
+<p>{{ textoLargo | acortador }}</p>
+<p>{{ textoLargo | acortador: 15 : '$$$' }}</p>
+
+<p>{{ 128 | segundos: true }}</p>
+<p>{{ 630 | segundos: false }}</p>
+<p>{{ 59 | segundos }}</p>
+<p>{{ 959 | segundos }}</p>
+
+<p>{{ '2026-04-30T23:12:40Z' | fecha }}</p>
+<p>{{ '2026-04-30T20:15:00Z' | fecha }}</p>
+<p>{{ '2026-04-30T19:20:00Z' | fecha }}</p>
+<p>{{ '2026-04-30T18:20:00Z' | fecha }}</p>
+<p>{{ '2026-04-30T17:20:00Z' | fecha }}</p>
+<p>{{ '2026-04-29T17:20:00Z' | fecha }}</p>
+<p>{{ '2026-04-28T17:20:00Z' | fecha }}</p>
+<p>{{ '2026-03-28T17:20:00Z' | fecha }}</p>
+<p>{{ '2025-03-28T17:20:00Z' | fecha }}</p>
