@@ -1,12 +1,21 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Resaltar } from './directives/resaltar';
+import { Timer } from './directives/timer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [Resaltar, Timer],
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('clase-07-directivas');
+  algo = 'Hola';
+
+  color = '#f00';
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.color = '#000';
+    }, 3000);
+  }
 }
