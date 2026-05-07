@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "clase-07-interceptors": {
+    "clase-08-interceptors": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "clase-07-interceptors:build:production"
+              "buildTarget": "clase-08-interceptors:build:production"
             },
             "development": {
-              "buildTarget": "clase-07-interceptors:build:development"
+              "buildTarget": "clase-08-interceptors:build:development"
             }
           },
           "defaultConfiguration": "development"
