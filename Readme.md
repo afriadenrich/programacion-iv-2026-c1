@@ -2,6 +2,7 @@
 
 ### Importante:
 Este cuatrimestre utilizamos la versión: *21.2.4* de Angular
+Este cuatrimestre utilizamos la versión: *11.0.21* de NestJS
 
 ## FECHAS DENTRO DE LA CURSADA
 - 21/04 - Corrección del 1er TP
@@ -9,8 +10,8 @@ Este cuatrimestre utilizamos la versión: *21.2.4* de Angular
 - 05/05 - Corrección del 1er TP
 - 12/05 - Entrega TP #1
 - 25/06 - Entrega TP #2
-- 02/07 - Recuperatorio TP #1
-- 07/07 - Recuperatorio TP #2 - Última fecha para PROMOCIONAR
+- 02/07 - Recuperatorio TP #1 / #2
+- 07/07 - Recuperatorio TP #2 / #1 - Última fecha para PROMOCIONAR
 
 ## FECHAS FUERA DE LA CURSADA
 
