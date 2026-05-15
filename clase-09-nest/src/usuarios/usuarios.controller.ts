@@ -57,3 +57,35 @@ export class UsuariosController {
     return this.usuarioS.eliminar(id);
   }
 }
+
+/*
+    const express = require('express')
+    const router = express.Router()
+
+    router.get("/", (req, res) => {
+        const queryPrams = req.query;
+        res.send(servicio.traer(queryParams))
+    });
+        
+    router.get("/:id", (req, res) => {
+        const id = req.params.id;
+        res.send(servicio.traerPorId(id))
+    });
+    
+    router.post("/", (req, res) => {
+        const usuario = req.body;
+        res.send(servicio.crear(usuario))
+    });
+    
+    router.put("/:id", (req, res) => {
+        const id = req.params.id;
+        const usuario = req.body;
+        res.send(servicio.modificar(id, usuario))
+    });
+    
+    router.delete("/:id", (req, res) => {
+        const id = req.params.id;
+        res.send(servicio.eliminar(id))
+    });
+
+ */
