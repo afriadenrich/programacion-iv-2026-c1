@@ -36,10 +36,11 @@ export class AlumnosController {
   @Patch(':id')
   // Quiero TRANSFORMAR el body en un objeto UpdateAlumnoDto, y VALIDAR tipos de datos
   update(
-    @Param('id') id: number,
+    @Param('id') id: string,
     @Body(new ValidationPipe({ whitelist: true })) datos: UpdateAlumnoDto,
   ) {
     console.log(datos);
+
     return this.alumnosService.update(+id, datos);
   }
 
