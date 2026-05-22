@@ -1,6 +1,8 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, Req, UseGuards } from '@nestjs/common';
 import { AutenticacionService } from './autenticacion.service';
 import { UsuarioLoginDTO, UsuarioRegistroDTO } from './usuario.dto';
+import { TokenGuard } from './token/token.guard';
+import { Request } from 'express';
 
 @Controller('autenticacion')
 export class AutenticacionController {
@@ -17,8 +19,11 @@ export class AutenticacionController {
   }
 
   @Get('/seguro')
-  rutaSegura() {
+  @UseGuards(TokenGuard)
+  rutaSegura(@Body('emailDelToken') email: any) {
+    console.log(email);
     // SOLO Voy a poder acceder si tengo unt tóken válido
-    return {};
+
+    return { mensaje: 'Acceso otorgado a ' + email };
   }
 }
