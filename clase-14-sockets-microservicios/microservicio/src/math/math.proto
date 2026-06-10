@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package math;
+
+service MathService {
+    rpc Sumar (Numeros) returns (Numero) {}
+    rpc Mostrar (Vacio) returns (Vacio) {}
+}
+
+message Vacio {
+
+}
+
+message Numeros {
+    repeated int32 numeros = 1;
+}
+
+message Numero {
+    int32 resultado = 1;
+}
