@@ -1,5 +1,5 @@
 {
-  "name": "clase-14-sockets-microservicios",
+  "name": "microservicio",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -20,12 +20,12 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.14.4",
+    "@grpc/proto-loader": "^0.8.1",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
-    "@nestjs/mapped-types": "*",
+    "@nestjs/microservices": "^11.1.26",
     "@nestjs/platform-express": "^11.0.1",
-    "@nestjs/platform-socket.io": "^11.1.26",
-    "@nestjs/websockets": "^11.1.26",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
